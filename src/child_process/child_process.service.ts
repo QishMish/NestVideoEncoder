@@ -22,7 +22,6 @@ export class ChildProcessService implements ChildProcessServiceInterface {
         scriptName,
       );
 
-      console.log(currentDir)
       return new Promise((resolve: any, reject: any) => {
         const script = childProcesses.spawn('bash', [
           currentDir,
